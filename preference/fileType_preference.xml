@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultPreferences>
+  <preference name="pdf" selected="true"/>
+  <preference name="doc"/>
+  <preference name="excel"/>
+  <preference name="text"/>
+</defaultPreferences>

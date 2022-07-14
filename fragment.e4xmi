@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_2mlK0EodEeepKqqU4DVq_A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4KJPUEodEeepKqqU4DVq_A" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_7__fgEodEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.command.newArchive" commandName="New Archive" description="Create a new Archive for a project or an analyte"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_AYUKoEoeEeepKqqU4DVq_A" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_Dw7sQEoeEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.handler.newarchive" contributionURI="bundleclass://org.grits.toolbox.entry.archive/org.grits.toolbox.entry.archive.command.NewArchive" command="_7__fgEodEeepKqqU4DVq_A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_SSZxoEoeEeepKqqU4DVq_A" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.grits.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_Ym_VIEoeEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.handledmenuitem.archive" label="Archive" iconURI="platform:/plugin/org.grits.toolbox.entry.archive/icons/bookcase.png" command="_7__fgEodEeepKqqU4DVq_A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_c-6-sEoeEeepKqqU4DVq_A" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_f27toEoeEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.handledmenuitem.archive" label="Archive" iconURI="platform:/plugin/org.grits.toolbox.entry.archive/icons/bookcase.png" command="_7__fgEodEeepKqqU4DVq_A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_kWr2cEoeEeepKqqU4DVq_A" featurename="children" parentElementId="org.grits.toolbox.core.toolbar.main">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_uNPUwEoyEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.handledtoolitem.archive" label="Archive" iconURI="platform:/plugin/org.grits.toolbox.entry.archive/icons/bookcase.png" tooltip="Create a new Archive" command="_7__fgEodEeepKqqU4DVq_A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Xs0rkEohEeepKqqU4DVq_A" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_b1FhcEohEeepKqqU4DVq_A" elementId="org.grits.toolbox.entry.archive.partdescriptor.archiveeditor" label="Archive Editor" iconURI="platform:/plugin/org.grits.toolbox.entry.archive/icons/bookcase.png" bindingContexts="_Vmpz0EoiEeepKqqU4DVq_A" allowMultiple="true" category="org.grits.toolbox.property.archive" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.archive/org.grits.toolbox.entry.archive.editor.ArchiveEntryEditor">
+      <tags>default</tags>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_StJ3IEoiEeepKqqU4DVq_A" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_Vmpz0EoiEeepKqqU4DVq_A" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+</fragment:ModelFragments>

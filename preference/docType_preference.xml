@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultPreferences>
+	<documentType name="Report" selected="true">
+		<subType name="NMR" selected="true"/>
+		<subType name="MS" />
+	</documentType>
+	<documentType name="Preliminary Data">
+		<subType name="Stage 1" />
+		<subType name="Stage 2" selected="true"/>
+		<subType name="Stage 3" />
+	</documentType>
+</defaultPreferences>

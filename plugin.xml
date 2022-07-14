@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.entry.archive.io.ArchivePropertyReader"
+            propertyId="org.grits.toolbox.property.archive">
+      </reader>
+   </extension>
+   <extension
+         point="org.grits.toolbox.core.preferencePages">
+      <page
+            name="Archive"
+            class="org.grits.toolbox.entry.archive.preference.doctype.DocTypePreference"
+            id="org.grits.toolbox.preference.archive.documentType">
+      </page>
+      <page
+            name="Keywords"
+            category="org.grits.toolbox.preference.archive.documentType"
+            class="org.grits.toolbox.entry.archive.preference.KeywordPreference"
+            id="org.grits.toolbox.preference.archive.keyword">
+      </page>
+   </extension>
+   <extension
+         id="org.grits.toolbox.entry.archive.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>
